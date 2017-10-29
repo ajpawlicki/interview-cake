@@ -10,6 +10,8 @@ class Tree {
 
     return (this.left ? this.left.checkIfBST(lowerBound, this.val) : true)
       && (this.right ? this.right.checkIfBST(this.val, upperBound) : true);
+
+    // return this.left.checkIfBST(lowerBound, this.val) || this.right.checkIfBST(this.val, upperBound);
   }
 };
 
