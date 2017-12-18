@@ -76,7 +76,7 @@ class BST {
     let node = this;
 
     while (node) {
-      if (node.left && !node.right) return node.left.findLargest();
+      if (node.left && !node.right) return node.left.findLargestIterative();
       if (node.right && !node.right.left && !node.right.right) return node;
       node = node.right;
     }
